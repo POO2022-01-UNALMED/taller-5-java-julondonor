@@ -2,7 +2,7 @@ package zooAnimales;
 import gestion.*;
 
 public class Animal {
-	private int totalAnimales;
+	private static int totalAnimales;
 	private String nombre;
 	private int edad;
 	private String habitat;
@@ -59,12 +59,13 @@ public class Animal {
 	public String movimiento() {
 		return "desplazarse";
 	}
-	public void totalPorTipo() {
-		System.out.println("Mamiferos: "+Mamifero.cantidadMamiferos());
-		System.out.println("Aves: "+Ave.cantidadAves());
-		System.out.println("Reptiles: "+Reptil.cantidadReptiles());
-		System.out.println("Peces: "+Pez.cantidadPeces());
-		System.out.println("Anfibios: "+Anfibio.cantidadAnfibios());
+	public static String totalPorTipo() {
+		String s = "Mamiferos: "+Mamifero.cantidadMamiferos()
+		+"\nAves: "+Ave.cantidadAves()
+		+"\nReptiles: "+Reptil.cantidadReptiles()
+		+"\nPeces: "+Pez.cantidadPeces()
+		+"\nAnfibios: "+Anfibio.cantidadAnfibios();
+		return s;
 	}
 	public String toString() {
 		if (this.zona instanceof Zona) {

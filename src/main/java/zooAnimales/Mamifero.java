@@ -31,7 +31,7 @@ public class Mamifero extends Animal{
 	public ArrayList<Mamifero> getListado(){
 		return this.listado;
 	}
-	public boolean getPelaje() {
+	public boolean isPelaje() {
 		return this.pelaje;
 	}
 	public int getPatas() {
