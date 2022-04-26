@@ -40,6 +40,7 @@ public class Zoologico {
 		for (Zona zona: this.zonas) {
 			counter += zona.cantidadAnimales();
 		}
+		return counter;
 	}
 	
 }
