@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import gestion.*;
 
 public class Ave extends Animal{
-	private static ArrayList<Ave> listado;
+	private static ArrayList<Ave> listado = new ArrayList<Ave>();
 	public static int halcones;
 	public static int aguilas;
 	private String colorPlumas;
 	public Ave() {
-		//listado.add(this);
+		listado.add(this);
 	}
 	public Ave(String nombre, int edad, String habitat, String genero, String colorPlumas) {
 		this.setNombre(nombre); this.setEdad(edad); this.setHabitat(habitat);
@@ -17,6 +17,7 @@ public class Ave extends Animal{
 		this.colorPlumas = colorPlumas;
 		listado.add(this);
 	}
+	
 	public static Ave crearHalcon(String nombre, int edad, String genero) {
 		halcones += 1;
 		return new Ave(nombre, edad, "montanas", genero, "cafe glorioso");

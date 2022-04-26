@@ -3,13 +3,13 @@ import java.util.ArrayList;
 import gestion.*;
 
 public class Reptil extends Animal{
-	private static ArrayList<Reptil> listado;
+	private static ArrayList<Reptil> listado = new ArrayList<Reptil>();
 	public static int iguanas;
 	public static int serpientes;
 	private String colorEscamas;
 	private int largoCola;
 	public Reptil() {
-		//listado.add(this);
+		listado.add(this);
 	}
 	public Reptil(String nombre, int edad, String habitat, String genero, String colorEscamas, int largoCola) {
 		this.setNombre(nombre); this.setEdad(edad); this.setHabitat(habitat);
