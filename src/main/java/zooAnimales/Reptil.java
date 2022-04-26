@@ -4,8 +4,8 @@ import gestion.*;
 
 public class Reptil extends Animal{
 	private static ArrayList<Reptil> listado;
-	public int iguanas;
-	public int serpientes;
+	public static int iguanas;
+	public static int serpientes;
 	private String colorEscamas;
 	private int largoCola;
 	public Reptil() {

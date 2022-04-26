@@ -4,8 +4,8 @@ import gestion.*;
 
 public class Mamifero extends Animal{
 	private static ArrayList<Mamifero> listado;
-	public int caballos;
-	public int leones;
+	public static int caballos;
+	public static int leones;
 	private boolean pelaje;
 	private int patas;
 	public Mamifero() {
