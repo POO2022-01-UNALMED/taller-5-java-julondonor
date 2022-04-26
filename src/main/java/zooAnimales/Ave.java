@@ -19,7 +19,7 @@ public class Ave extends Animal{
 	}
 	public static Ave crearHalcon(String nombre, int edad, String genero) {
 		halcones += 1;
-		new Ave(nombre, edad, "montanas", genero, "cafe glorioso");
+		return new Ave(nombre, edad, "montanas", genero, "cafe glorioso");
 	}
 	public static Ave crearAguila(String nombre, int edad, String genero) {
 		aguilas += 1;
