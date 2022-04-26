@@ -1,4 +1,5 @@
 package zooAnimales;
+import gestion.*;
 
 public class Animal {
 	private int totalAnimales;
@@ -66,7 +67,7 @@ public class Animal {
 		System.out.println("Peces: "+Pez.cantidadPeces());
 		System.out.println("Anfibios: "+Anfibio.cantidadAnfibios());
 	}
-	public void toString() {
+	public String toString() {
 		if (this.zona instanceof Zona) {
 			return "Mi nombre es "+this.nombre+" tengo una edad de "+this.edad+", habito en "+this.habitat+" y mi genero es "+this.genero+", la zona en la que me ubico es "+this.zona.getNombre()+", en el "+this.zona.getZoo().getNombre();
 		} else {

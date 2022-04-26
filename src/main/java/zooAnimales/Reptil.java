@@ -1,5 +1,6 @@
 package zooAnimales;
 import java.util.ArrayList;
+import gestion.*;
 
 public class Reptil extends Animal{
 	private static ArrayList<Reptil> listado;
