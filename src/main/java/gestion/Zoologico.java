@@ -18,7 +18,7 @@ public class Zoologico {
 	public String getUbicacion() {
 		return ubicacion;
 	}
-	public ArrayList<Zona> getZonas(){
+	public ArrayList<Zona> getZona(){
 		return zonas;
 	}
 	public void setNombre(String nombre) {
