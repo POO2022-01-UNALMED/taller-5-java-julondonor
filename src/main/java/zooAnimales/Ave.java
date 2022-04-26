@@ -11,19 +11,19 @@ public class Ave extends Animal{
 	public Ave() {
 		listado.add(this);
 	}
-	public Ave(String nombre, int edad, String habitat, String genero, Zona zona, String colorPlumas) {
+	public Ave(String nombre, int edad, String habitat, String genero, String colorPlumas) {
 		this.setNombre(nombre); this.setEdad(edad); this.setHabitat(habitat);
-		this.setGenero(genero); this.setZona(zona); 
+		this.setGenero(genero); 
 		this.colorPlumas = colorPlumas;
 		listado.add(this);
 	}
-	public void crearHalcon(String nombre, int edad, String genero, Zona zona) {
+	public static Ave crearHalcon(String nombre, int edad, String genero) {
 		halcones += 1;
-		new Ave(nombre, edad, "montanas", genero, zona, "cafe glorioso");
+		new Ave(nombre, edad, "montanas", genero, "cafe glorioso");
 	}
-	public void crearAguila(String nombre, int edad, String genero, Zona zona) {
+	public static Ave crearAguila(String nombre, int edad, String genero) {
 		aguilas += 1;
-		new Ave(nombre, edad, "montanas", genero, zona, "blanco y amarillo");
+		return new Ave(nombre, edad, "montanas", genero,"blanco y amarillo");
 	}
 	public static int cantidadAves() {
 		return Ave.listado.size();

@@ -12,12 +12,11 @@ public class Animal {
 	public Animal() {
 		totalAnimales += 1;
 	}
-	public Animal(String nombre, int edad,String habitat, String genero, Zona zona) {
+	public Animal(String nombre, int edad,String habitat, String genero) {
 		this.nombre = nombre;
 		this.edad = edad;
 		this.habitat = habitat;
 		this.genero = genero;
-		this.zona = zona;
 		totalAnimales +=1;
 	}
 	public int getTotalAnimales() {

@@ -11,19 +11,19 @@ public class Reptil extends Animal{
 	public Reptil() {
 		listado.add(this);
 	}
-	public Reptil(String nombre, int edad, String habitat, String genero, Zona zona, String colorEscamas, int largoCola) {
+	public Reptil(String nombre, int edad, String habitat, String genero, String colorEscamas, int largoCola) {
 		this.setNombre(nombre); this.setEdad(edad); this.setHabitat(habitat);
-		this.setGenero(genero); this.setZona(zona);  
+		this.setGenero(genero);
 		this.colorEscamas = colorEscamas; this.largoCola = largoCola;
 		listado.add(this);
 	}
-	public void crearIguana(String nombre, int edad, String genero, Zona zona) {
+	public static Reptil crearIguana(String nombre, int edad, String genero) {
 		iguanas += 1;
-		new Reptil(nombre, edad, "humedal", genero, zona, "verde",3);
+		return new Reptil(nombre, edad, "humedal", genero, "verde",3);
 	}
-	public void crearSerpiente(String nombre, int edad, String genero, Zona zona) {
+	public static Reptil crearSerpiente(String nombre, int edad, String genero) {
 		serpientes += 1;
-		new Reptil(nombre, edad, "jungla", genero, zona, "blanco",1);
+		new Reptil(nombre, edad, "jungla", genero, "blanco",1);
 	}
 	public static int cantidadReptiles() {
 		return Reptil.listado.size();

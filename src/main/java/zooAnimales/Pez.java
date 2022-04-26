@@ -12,19 +12,19 @@ public class Pez extends Animal{
 	public Pez() {
 		listado.add(this);
 	}
-	public Pez(String nombre, int edad, String habitat, String genero, Zona zona, String colorEscamas, int cantidadAletas) {
+	public Pez(String nombre, int edad, String habitat, String genero, String colorEscamas, int cantidadAletas) {
 		this.setNombre(nombre); this.setEdad(edad); this.setHabitat(habitat);
-		this.setGenero(genero); this.setZona(zona); 
+		this.setGenero(genero); 
 		this.colorEscamas = colorEscamas; this.cantidadAletas = cantidadAletas;
 		listado.add(this);
 	}
-	public void crearSalmon(String nombre, int edad, String genero, Zona zona) {
+	public static Pez crearSalmon(String nombre, int edad, String genero) {
 		salmones += 1;
-		new Pez(nombre, edad, "oceano", genero, zona, "rojo",6);
+		return new Pez(nombre, edad, "oceano", genero, "rojo",6);
 	}
-	public void crearBacalao(String nombre, int edad, String genero, Zona zona) {
+	public static Pez crearBacalao(String nombre, int edad, String genero) {
 		bacalaos += 1;
-		new Pez(nombre, edad, "oceano", genero, zona, "gris",6);
+		return new Pez(nombre, edad, "oceano", genero, "gris",6);
 	}
 	public static int cantidadPeces() {
 		return Pez.listado.size();
