@@ -1,6 +1,6 @@
 package zooAnimales;
 import java.util.ArrayList;
-import gestion.*;
+
 
 
 public class Pez extends Animal{
@@ -33,7 +33,7 @@ public class Pez extends Animal{
 		return "nadar";
 	}
 	public ArrayList<Pez> getListado(){
-		return this.listado;
+		return Pez.listado;
 	}
 	public String getColorEscamas() {
 		return this.colorEscamas;
@@ -43,7 +43,7 @@ public class Pez extends Animal{
 	}
 
 	public void setListado(ArrayList<Pez> listado) {
-		this.listado = listado;
+		Pez.listado = listado;
 	}
 	public void setColorEscamas(String colorEscamas) {
 		this.colorEscamas = colorEscamas;

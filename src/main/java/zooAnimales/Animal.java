@@ -38,7 +38,7 @@ public class Animal {
 		return zona;
 	}
 	public void setTotalAnimales(int totalAnimales) {
-		this.totalAnimales = totalAnimales;
+		Animal.totalAnimales = totalAnimales;
 	}
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
@@ -69,9 +69,9 @@ public class Animal {
 	}
 	public String toString() {
 		if (this.zona instanceof Zona) {
-			return "Mi nombre es "+this.nombre+" tengo una edad de "+this.edad+", habito en "+this.habitat+" y mi genero es "+this.genero+", la zona en la que me ubico es "+this.zona.getNombre()+", en el "+this.zona.getZoo().getNombre();
+			return "Mi nombre es "+this.nombre+", tengo una edad de "+this.edad+", habito en "+this.habitat+" y mi genero es "+this.genero+", la zona en la que me ubico es "+this.zona.getNombre()+", en el "+this.zona.getZoo().getNombre();
 		} else {
-			return "Mi nombre es "+this.nombre+" tengo una edad de "+this.edad+", habito en "+this.habitat+" y mi genero es "+this.genero;
+			return "Mi nombre es "+this.nombre+", tengo una edad de "+this.edad+", habito en "+this.habitat+" y mi genero es "+this.genero;
 		}
 	}
 }

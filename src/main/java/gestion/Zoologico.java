@@ -24,7 +24,7 @@ public class Zoologico {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public void setUbicacion(String Ubicacion) {
+	public void setUbicacion(String ubicacion) {
 		this.ubicacion = ubicacion;
 	}
 	public void setZona(ArrayList<Zona> zonas) {
