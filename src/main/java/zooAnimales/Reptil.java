@@ -23,7 +23,7 @@ public class Reptil extends Animal{
 	}
 	public static Reptil crearSerpiente(String nombre, int edad, String genero) {
 		serpientes += 1;
-		new Reptil(nombre, edad, "jungla", genero, "blanco",1);
+		return new Reptil(nombre, edad, "jungla", genero, "blanco",1);
 	}
 	public static int cantidadReptiles() {
 		return Reptil.listado.size();
